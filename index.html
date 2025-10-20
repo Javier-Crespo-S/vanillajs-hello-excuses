@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Excusometro</title>
 </head>
 <body>
@@ -10,27 +11,6 @@
 <h2 id="excuse">Aquí va la excusa</h2>
 
 
-<script>
-
-const getRandomElement = (array) => array[Math.floor(Math.random() * array.length)];
-
-function getExcuse() {
-    const when = ["Hace dos días", "Mientras yo estaba en el baño", "En un abrir y cerrar de ojos", "Durante el concierto de Camela", "Justo cuando acabé mis deberes,"];
-    const who = ["un alien", "mi perro", "fulanito de tal", "mi primo el del pueblo", "un duende pequeño"];
-    const action = ["se comió", "me destrozó", "me prendió fuego", "me robó", "me escondió"];
-    const what = ["mi cuaderno", "mi mochila", "mi Macbook", "mis gafas", "mi boli de la suerte"];
-    
-    
-    return `${getRandomElement(when)} ${getRandomElement(who)} ${getRandomElement(action)} ${getRandomElement(what)}.`;
-}
-
-
-    // Usamos window.onload para asegurarnos de que el h2 exista en el DOM
-    window.onload = function() {
-        const myExcuse = document.getElementById("excuse");
-        myExcuse.textContent = getExcuse();
-    };
-
-</script>
+<script src="main.js"></script>
 </body>
 </html>
